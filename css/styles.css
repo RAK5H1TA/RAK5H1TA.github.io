@@ -221,7 +221,6 @@ a {
   font-weight: 800;
   position: relative;
   font-size: clamp(var(--fs-xxxl), 4vw, var(--fs-head));
-  translate: 0 -800%;
 }
 
 .heading::before {
@@ -890,7 +889,6 @@ section {
 /* =================== Work =================== */
 .work {
   --gap: 4rem;
-  height: 50rem;
 }
 
 .work-box {
