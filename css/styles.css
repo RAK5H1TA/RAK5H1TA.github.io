@@ -221,6 +221,7 @@ a {
   font-weight: 800;
   position: relative;
   font-size: clamp(var(--fs-xxxl), 4vw, var(--fs-head));
+  translate: 0 -800%;
 }
 
 .heading::before {
@@ -889,6 +890,7 @@ section {
 /* =================== Work =================== */
 .work {
   --gap: 4rem;
+  height: 50rem;
 }
 
 .work-box {
@@ -1098,4 +1100,29 @@ footer {
   .author {
     padding-top: 0;
   }
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0rem;
+  overflow: hidden;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%); 
+  user-select: none; /* -- Prevent image highlighting -- */
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  transition-duration: 1s;
 }
