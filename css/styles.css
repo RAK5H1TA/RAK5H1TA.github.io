@@ -1107,7 +1107,7 @@ footer {
 
 .image-gallery .image-box {
   position: relative;
-  background-color: #d7d7d8;
+  /* background-color: #d7d7d8; */
   overflow: hidden;
 }
 
@@ -1152,6 +1152,7 @@ footer {
 
 .image-gallery .image-box .details {
   text-align: center;
+  background-color: var(--violet);
 }
 
 .image-gallery .image-box .details .title {
