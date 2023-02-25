@@ -5,6 +5,7 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  zoom: 99%;
 }
 
 *::before,
@@ -40,16 +41,16 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 :root {
-  --violet: #170528;
+  --violet: #181825;
   --light-violet: #210935;
   --lightest-violet: #411665;
   --slate: #8892B0;
   --light-slate: #A8B2D1;
   --lightest-slate: #CCD6F6;
   --white: #FFFFFF;
-  --blue: #64DAFF;
+  --blue: #74c7ec;
   
-  --violet-tint: rgba(23, 5, 40, 0.7);
+  --violet-tint: rgba(17, 17, 27, 0);
   --violet-shadow: rgba(10, 3, 18, 0.7);
   --light-violet-alt: rgb(38, 10, 61);
   --blue-alt: rgba(100, 218, 255, 0.6);
