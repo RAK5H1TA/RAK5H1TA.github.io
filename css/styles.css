@@ -31,7 +31,7 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-thumb {
   /* Using a border-color here to ensure that the thumb doesn't get submerged when it hits the edges of track. Using the same color as bg color creates an illusion that scoller is stopping right before the edge */
-  border: 3px solid var(--violet); 
+  border: 3px solid var(--violet);
   border-radius: var(--card-radius);
   background-color: hsl(225, 20%, 35%);
 }
@@ -42,14 +42,14 @@ html::-webkit-scrollbar-thumb:hover {
 
 :root {
   --violet: #181825;
-  --light-violet: #210935;
+  --light-violet: #1e1e2e;
   --lightest-violet: #411665;
   --slate: #8892B0;
   --light-slate: #A8B2D1;
   --lightest-slate: #CCD6F6;
   --white: #FFFFFF;
   --blue: #74c7ec;
-  
+
   --violet-tint: rgba(17, 17, 27, 0);
   --violet-shadow: rgba(10, 3, 18, 0.7);
   --light-violet-alt: rgb(38, 10, 61);
@@ -254,7 +254,7 @@ a {
   position: fixed;
   z-index: 10;
   transition: transform var(--quick) var(--easeOutSine) 0.1s,
-              height var(--quick) var(--easeOutSine);
+    height var(--quick) var(--easeOutSine);
   backdrop-filter: blur(6px);
 }
 
@@ -270,8 +270,8 @@ a {
 }
 
 .nav-logo,
-.nav-logo > a,
-.nav-logo > a > svg {
+.nav-logo>a,
+.nav-logo>a>svg {
   width: 42px;
   height: 42px;
 }
@@ -304,7 +304,10 @@ a {
   content: '';
   display: block;
   position: absolute;
-  top: calc(100% + 0.5px); right: 0; bottom: 0; left: 0.25px;
+  top: calc(100% + 0.5px);
+  right: 0;
+  bottom: 0;
+  left: 0.25px;
   inset: calc(100% + 0.5px) 0 0 0.25px;
   width: 100%;
   height: 1px;
@@ -473,7 +476,9 @@ section {
   z-index: 9;
   position: fixed;
   margin-inline: 3rem;
-  bottom: 0; right: 0; left: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   justify-content: space-between;
   align-items: flex-end;
   pointer-events: none;
@@ -481,13 +486,14 @@ section {
 
 .social-list,
 .mail-box {
-  writing-mode: vertical-rl; /* Behaves like: flex-direction: column */
+  writing-mode: vertical-rl;
+  /* Behaves like: flex-direction: column */
   --gap: 0.75rem;
   pointer-events: auto;
 }
 
 .social-list li *,
-.mail-box > a {
+.mail-box>a {
   transition: all var(--normal) var(--easeOutSine);
 }
 
@@ -501,16 +507,16 @@ section {
 }
 
 .social-items,
-.mail-box > a {
+.mail-box>a {
   padding: 0.5rem 0.75rem;
 }
 
-.social-items > .icons,
-.mail-box > a {
+.social-items>.icons,
+.mail-box>a {
   color: var(--light-slate);
 }
 
-.social-items > .icons {
+.social-items>.icons {
   width: var(--social-icons-size);
   height: var(--social-icons-size);
 }
@@ -519,19 +525,19 @@ section {
   margin-top: -3px;
 }
 
-.mail-box > a {
+.mail-box>a {
   margin-left: 1px;
   font-size: var(--fs-sm);
   letter-spacing: 0.125rem;
 }
 
-.social-items:hover > .icons path,
-.mail-box > a:hover {
+.social-items:hover>.icons path,
+.mail-box>a:hover {
   color: var(--blue);
 }
 
 .social-items:hover,
-.mail-box > a:hover {
+.mail-box>a:hover {
   transform: translateY(-8px);
 }
 
@@ -599,7 +605,9 @@ section {
   width: 40px;
   height: 16px;
   position: absolute;
-  left: 100%; top: 35%; bottom: 0;
+  left: 100%;
+  top: 35%;
+  bottom: 0;
   transform: translateX(-20px);
   pointer-events: none;
 }
@@ -801,7 +809,8 @@ section {
 }
 
 .about-img {
-  margin-top: 7px; /* Just for satisfying my ocd */
+  margin-top: 7px;
+  /* Just for satisfying my ocd */
 }
 
 @media screen and (max-width: 768px) {
@@ -839,8 +848,9 @@ section {
   border-radius: var(--card-radius);
   transform: translateY(0);
   transition: transform var(--normal) var(--easeOutSine),
-              box-shadow var(--normal) var(--easeOutSine);
-  user-select: none; /* Makes the card & all of its children unselectable by the user */
+    box-shadow var(--normal) var(--easeOutSine);
+  user-select: none;
+  /* Makes the card & all of its children unselectable by the user */
 }
 
 .card svg {
@@ -918,10 +928,12 @@ section {
   height: 230px;
   filter: grayscale();
 }
+
 .wb-img:hover {
   filter: none;
   height: 250px;
 }
+
 .wb-card-links {
   --gap: 0;
   z-index: 1;
@@ -944,14 +956,15 @@ section {
   margin-bottom: 0.75rem;
 }
 
-.wb-card-title > a {
+.wb-card-title>a {
   color: var(--lightest-slate);
 }
 
-.wb-card-title > a::before {
+.wb-card-title>a::before {
   content: '';
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   border-radius: var(--card-radius);
@@ -963,7 +976,7 @@ section {
   margin-bottom: 1.5rem;
 }
 
-.wb-card-desc > p {
+.wb-card-desc>p {
   color: var(--light-slate);
 }
 
@@ -973,7 +986,7 @@ section {
   color: var(--blue);
 }
 
-.wb-card-title > a:hover {
+.wb-card-title>a:hover {
   color: var(--blue);
 }
 
@@ -1207,5 +1220,104 @@ footer {
   .image-gallery .image-box:nth-child(7n + 1) {
     grid-column: unset;
     grid-row: unset;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+
+.data-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 20.75em;
+  height: 230px;
+  overflow: hidden;
+  border-radius: 0.5em;
+  text-decoration: none;
+  background-color: var(--light-violet);
+  margin: 1em;
+  padding: 2.75em 2.5em;
+  box-shadow: 0 1.5em 2.5em -0.5em rgba(0, 0, 0, .1);
+  transition: transform 0.45s ease, background 0.45s ease;
+}
+
+.data-card h3 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 1;
+  padding-bottom: 0.5em;
+  margin: 0 0 0.142857143em;
+  border-bottom: 2px solid var(--blue);
+  transition: color 0.45s ease, border 0.45s ease;
+}
+
+.data-card h4 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.3em;
+  transition: color 0.45s ease;
+}
+
+.data-card p {
+  opacity: 0;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.8;
+  margin: 0 0 1.25em;
+  transform: translateY(-1em);
+  transition: opacity 0.45s ease, transform 0.5s ease;
+}
+
+.data-card .link-text svg {
+  margin-left: 0.5em;
+  transition: transform 0.6s ease;
+}
+
+.data-card .link-text svg path {
+  transition: fill 0.45s ease;
+}
+
+.data-card:hover {
+  background: #2a7679;
+  transform: scale(1.02);
+}
+
+.data-card:hover h3 {
+  color: #fff;
+  border-bottom-color: #2a7679;
+}
+
+.data-card:hover h4 {
+  color: #fff;
+}
+
+.data-card:hover p {
+  opacity: 1;
+  transform: none;
+}
+
+.data-card:hover .link-text {
+  color: #fff;
+}
+
+.data-card:hover .link-text svg {
+  animation: point 1.25s infinite alternate;
+}
+
+.data-card:hover .link-text svg path {
+  fill: #fff;
+}
+
+@keyframes point {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0.125em);
   }
 }
